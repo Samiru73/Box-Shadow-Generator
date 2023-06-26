@@ -1,0 +1,145 @@
+/* Importa la fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Estilos generales */
+
+html{
+    zoom: 0.9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos del body */
+
+body{
+    background-color: #311b92;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para etiquetas */
+
+label{
+    font-size: 14px;
+}
+
+/* Estilos del contenedor principal */
+
+.container{
+    background-color: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+    width: 80vmin;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(2, 42, 83, 0.2);
+}
+
+/* Estilos para el resultado */
+
+.result{
+    padding: 20px 0 120px;
+}
+
+/* Estilos para el elemento de vista previa */
+
+#preview{
+    background-color: #311b92;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    border-radius: 70px;
+    box-shadow: -6px 15px 30px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para los ajustes */
+
+.settings{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 15px 25px;
+}
+
+/* Estilos para el contenedor de los sliders */
+
+.range-wrapper, #color-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Estilos para los sliders */
+
+input[type="range"]{
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Estilos para los checkboxes */
+
+input[type="checkbox"]{
+    cursor: pointer;
+}
+
+/* Estilos para el contenedor de código */
+
+.code-container{
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Estilos para el botón del contenedor de código */
+
+.code-container button{
+    background-color: #311b92;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+}
+
+/* Estilos para el textarea del contenedor de código */
+
+textarea{
+    resize: none;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+/* Estilos para el contenedor de inputs */
+
+.input-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Estilos para el contenedor de color */
+
+#color-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Estilos para el input de tipo color */
+
+input[type="color"]{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
